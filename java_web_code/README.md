@@ -1,4 +1,4 @@
-# wildfly-spring-boot-sample
+# wildfly-spring-boot-sample application deployment...........................
 
  1. Download WildFly from http://wildfly.org and unzip it.
  2. Clone this repo and call `mvn install`.

@@ -1,5 +1,5 @@
 # # Shell Commands to be added to Jenkins Job at Build & Post Build Phases # # 
-
+# have to follow these steps...................
 ```
 #!/bin/bash
 echo "*******-Starting CI CD Pipeline Tasks-*******"
