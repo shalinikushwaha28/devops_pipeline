@@ -1,5 +1,3 @@
 <<<<<<< HEAD
 Hello Engineering team...................................... All cool.............................
-=======
-Hello Team...Welcome to the demo session
->>>>>>> 553ef2ba1ba36937991a16d5ef5886dc5f4f7b59
+
