@@ -7,12 +7,11 @@ branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
 versionLabel=v$1
 
 # establish branch and tag name variables
-devBranch=develop
 masterBranch=master
 releaseBranch=release-$versionLabel
  
 # create the release branch from the -develop branch
-git checkout -b $releaseBranch $devBranch
+git checkout -b $releaseBranch $masterBranch
  
 # file in which to update version number
 versionFile="version.txt"
@@ -35,7 +34,7 @@ git merge --no-ff $releaseBranch
 git tag $versionLabel
  
 # merge release branch with the new version number back into develop
-git checkout $devBranch
+git checkout $masterBranch
 git merge --no-ff $releaseBranch
  
 # remove release branch
