@@ -8,7 +8,7 @@ versionLabel=$0.1
 
 # establish branch and tag name variables
 masterBranch=master
-releaseBranch=release-$versionLabel
+releaseBranch=v$versionLabel
  
 # create the release branch from the -develop branch
 git checkout -b $releaseBranch $masterBranch
