@@ -38,4 +38,4 @@ git checkout $masterBranch
 git merge --no-ff $releaseBranch
  
 # remove release branch
-git branch -d $releaseBranch
+#git branch -d $releaseBranch
