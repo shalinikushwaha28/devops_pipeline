@@ -6,6 +6,6 @@ git tag -a 0.1.codex1 -m "Version 0.1 codex1"
 git push origin 0.1.codex1
 
 # delete a tag
-git tag -d 0.1
-git push origin :refs/tags/0.1
+#git tag -d 0.1
+#git push origin :refs/tags/0.1
 
