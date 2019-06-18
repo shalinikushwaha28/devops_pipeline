@@ -10,7 +10,7 @@ if [ -z "$BRANCH" ]
   then
     BRANCH_SUFFIX=""
   else
-    if [ "$BRANCH" = "codex-devops" ]
+    if [ "$BRANCH" = "develop" ]
       then
         BRANCH_SUFFIX=""
       else
