@@ -10,7 +10,7 @@ if [ -z "$BRANCH" ]
   then
     BRANCH_SUFFIX=""
   else
-    if [ "$BRANCH" = "codex-devops" ]
+    if [ "$BRANCH" = "develop" ]
       then
         BRANCH_SUFFIX=""
       else
@@ -31,7 +31,7 @@ fi
 
 #Get the highest tag number
 VERSION=`git describe --abbrev=0 --tags`
-VERSION=${VERSION:-'v0.0'}
+VERSION=${VERSION:-'developv0.0'}
 
 #Get number parts
 MAJOR="${VERSION%%.*}"; VERSION="${VERSION#*.}"
