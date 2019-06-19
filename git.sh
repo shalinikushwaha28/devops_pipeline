@@ -3,31 +3,8 @@
 #Getting all branches
 git branch | grep "[^* ]+" -Eo
 
-# BRANCH set up
+# BRANCH set up and -z(string is null, that is, has zero length)
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
-
-if [ -z "$BRANCH" ]
-  then
-    BRANCH_SUFFIX=""
-  else
-    if [ "$BRANCH" = "develop" ]
-      then
-        BRANCH_SUFFIX=""
-      else
-        if [ "$BRANCH" = "HEAD" ]
-          then
-            BRANCH_SUFFIX=""
-          else
-            BRANCH_SUFFIX="-$BRANCH"
-        fi
-    fi
-fi
-
-if [ "$BRANCH_SUFFIX" = "HEAD" ]
-  then
-    BRANCH_SUFFIX=""
-fi
-
 
 #Get the highest tag number
 VERSION=`git describe --abbrev=0 --tags`
