@@ -6,29 +6,6 @@ git branch | grep "[^* ]+" -Eo
 # BRANCH set up
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
-if [ -z "$BRANCH" ]
-  then
-    BRANCH_SUFFIX=""
-  else
-    if [ "$BRANCH" = "master" ]
-      then
-        BRANCH_SUFFIX=""
-      else
-        if [ "$BRANCH" = "HEAD" ]
-          then
-            BRANCH_SUFFIX=""
-          else
-            BRANCH_SUFFIX="-$BRANCH"
-        fi
-    fi
-fi
-
-if [ "$BRANCH_SUFFIX" = "HEAD" ]
-  then
-    BRANCH_SUFFIX=""
-fi
-
-
 #Get the highest tag number
 VERSION=`git describe --abbrev=0 --tags`
 VERSION=${VERSION:-'v0.0'}
