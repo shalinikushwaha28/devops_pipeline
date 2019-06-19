@@ -8,7 +8,7 @@ BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
 #Get the highest tag number
 VERSION=`git describe --abbrev=0 --tags`
-VERSION=${VERSION:-'v0.0'}
+VERSION=${VERSION:-'codexdevops-v0.0'}
 
 #Get number parts
 MAJOR="${VERSION%%.*}"; VERSION="${VERSION#*.}"
