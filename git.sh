@@ -3,7 +3,7 @@
 #Getting all branches
 git branch | grep "[^* ]+" -Eo
 
-# BRANCH set up and -z(string is null, that is, has zero length)
+# BRANCH set up
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
 #Get the highest tag number
